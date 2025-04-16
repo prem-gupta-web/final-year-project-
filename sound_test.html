@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Test</title>
+</head>
+<body>
+
+<h2>Click Below to Test Sound</h2>
+<button onclick="playTestSound()">Play Sound</button>
+
+<script>
+    function playTestSound() {
+        const testSound = new Audio("http://localhost/shopping-website/sounds/click.mp3");
+        testSound.play().catch((e) => {
+            console.log("Sound playback failed: ", e);
+        });
+    }
+</script>
+
+</body>
+</html>
